@@ -1,0 +1,19 @@
+﻿@model KnowledgeTest.BLL.Model.Test.QuestionsModel
+@{
+    ViewBag.Title = "Questions";
+}
+
+<h2>Test @Model.TestName questions</h2>
+
+@foreach (var question in Model.Questions)
+{
+    <div>
+        @question.Title
+        @Html.ActionLink("Edit", "EditQuestion", "TestManage", new {id = question.Id}, new {})
+        @Html.ActionLink("Delete", "Delete", "TestManage", new {id = question.Id}, new {})
+        <div>
+            @Html.Raw(question.Description)
+        </div>
+    </div>
+}
+

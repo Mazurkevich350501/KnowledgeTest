@@ -180,7 +180,6 @@
     <Compile Include="AutofacDependencycyResolver.cs" />
     <Compile Include="Autofac\WebModule.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\ClassManageController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\TestManageController.cs" />
@@ -250,12 +249,13 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\TestManage\Index.cshtml" />
+    <Content Include="Views\TestManage\Questions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\ClassManage\" />
     <Folder Include="Views\Testing\" />
-    <Folder Include="Views\TestManage\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
